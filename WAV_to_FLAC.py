@@ -1,6 +1,13 @@
 import os
 from pydub import AudioSegment
 
+def Test():
+    #Files should be in Testfiles/*.wav
+    input_folder = "Testfiles"
+    output_folder = "FlacFiles"
+    return (input_folder, output_folder)
+
+
 def Wav_to_FLAC_convert(input_folder, output_folder):
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder):
